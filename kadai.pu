@@ -1,0 +1,19 @@
+@startuml
+left to right direction
+package トップページ{
+    package 授業{
+        usecase "課題" as f1
+        usecase "授業からのお知らせ" as f2
+        usecase "教材" as f3
+    }
+    usecase "学校からのお知らせ" as f4
+    usecase "ポートフォリオ" as f5
+    usecase "メッセージ" as f6
+}
+:生徒:-->f1
+:生徒:-->f2
+:生徒:-->f3
+:生徒:-->f4
+:生徒:-->f5
+:生徒:-->f6
+@enduml
